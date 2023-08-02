@@ -357,7 +357,7 @@ resource "helm_release" "aws-load-balancer-controller" {
 
 
 
-#############   KARPENTER ADDONDS    ##########################################
+##############   KARPENTER ADDONDS    ##########################################
 data "aws_iam_policy_document" "karpenter_controller_assume_role_policy" {
   count = var.enable_cluster_karpenter ? 1 : 0
   statement {
