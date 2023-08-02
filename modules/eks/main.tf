@@ -273,7 +273,7 @@ resource "null_resource" "dependency" {
   # Noop resource block, used only for dependency
 }
 
-# helm.tf  
+## helm.tf  
 provider "helm" {
 
   kubernetes {
