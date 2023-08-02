@@ -284,7 +284,7 @@ provider "helm" {
       args        = ["eks", "get-token", "--cluster-name", aws_eks_cluster.eks-cluster.id]
       command     = "aws"
       env = {
-        AWS_PROFILE = var.aws_profile_name # Replace with your AWS profile name
+        #AWS_PROFILE = var.aws_profile_name # Replace with your AWS profile name
       }
     }
   }
@@ -298,7 +298,7 @@ provider "kubernetes" {
     args        = ["eks", "get-token", "--cluster-name", aws_eks_cluster.eks-cluster.id]
     command     = "aws"
     env = {
-      AWS_PROFILE = var.aws_profile_name # Replace with your AWS profile name
+      #AWS_PROFILE = var.aws_profile_name # Replace with your AWS profile name
     }
   }
 }
@@ -311,7 +311,7 @@ provider "kubectl" {
     args        = ["eks", "get-token", "--cluster-name", aws_eks_cluster.eks-cluster.id]
     command     = "aws"
     env = {
-      AWS_PROFILE = var.aws_profile_name # Replace with your AWS profile name
+     # AWS_PROFILE = var.aws_profile_name # Replace with your AWS profile name
     }
   }
 }
